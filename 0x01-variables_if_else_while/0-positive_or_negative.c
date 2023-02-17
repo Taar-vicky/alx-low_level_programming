@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - more headers goes there */
+/*  more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - entry block
+ *
+ * Return: always 0 (success)
+ */
 int main(void)
 {
 		int n;
