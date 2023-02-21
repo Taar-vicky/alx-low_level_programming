@@ -2,7 +2,7 @@
 
 /**
  * print alphabet - make the alphabet
- * Return: Always 0
+ * Return: void
  */
 
 void print_alphabet(void)
@@ -12,7 +12,7 @@ void print_alphabet(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(c);
+	_putchar(c);
 	}
 	_putchar('\n');
 }
