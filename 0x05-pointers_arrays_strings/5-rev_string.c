@@ -4,29 +4,23 @@
  * rev_string - This fuction print a string reverser
  *
  * @s: this is the pointer that point to a string
+ * Return: string in reverse
  */
 
 void rev_string(char *s)
+
 {
-	int a, len;
+	char rv = s[0];
+	int c = 0;
+	int i;
 
-	char *begin, *end = s;
-
-	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
+	while (s[c] != '\0')
+		c++;
+	for (i = 0; i < c; i++)
 	{
-		end++;
+		c--;
+		rv = s[i];
+		s[i] = s[c];
+		s[c] = rv;
 	}
-	len = a + 1;
-	begin = s;
-	for (a = 0; a < len / 2; a++)
-	{
-		char x;
-
-		x = *end;
-		*end = *begin;
-		*begin = x;
-		begin++;
-		end--;
-	}
-	end[len + 1] = '\0';
 }
